@@ -39,9 +39,27 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.graphviz',
-    'sphinxcontrib.plantuml',
+    'sphinxcontrib.plantuml'
+    # 'sphinxprettysearchresults',
 ]
 
+
+# html_theme_options = {
+#     'canonical_url': '',
+#     'analytics_id': 'UA-XXXXXXX-1',  #  Provided by Google in your dashboard
+#     'logo_only': False,
+#     'display_version': True,
+#     'prev_next_buttons_location': 'bottom',
+#     'style_external_links': False,
+#     'vcs_pageview_mode': 'view ',
+#     # Toc options
+#     'collapse_navigation': True,
+#     'sticky_navigation': True,
+#     'navigation_depth': 4,
+#     'includehidden': True,
+#     'titles_only': False
+# }
+# use_old_search_snippets = True
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 plantuml = 'java -jar ' + os.path.join(current_dir, 'libs/plantuml.jar') + ' -SdefaultFontName=IPAGothic'

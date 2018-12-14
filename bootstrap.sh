@@ -21,6 +21,7 @@ apt-get -y install graphviz
 apt-get -y install openjdk-8-jre
 
 pip install sphinxcontrib-plantuml
+pip install sphinx_rtd_theme
 
 #apt-get install -y nfs-kernel-server nfs-common
 #host_ip="$(netstat -rn | grep "^0.0.0.0 " | cut -d " " -f10)"
