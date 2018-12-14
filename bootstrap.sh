@@ -17,6 +17,8 @@ apt-get -y install python-sphinx
 apt-get -y install make
 apt-get -y install make-guile
 apt-get -y install python-pip
+apt-get -y install graphviz
+apt-get -y install openjdk-8-jre
 
 pip install sphinxcontrib-plantuml
 

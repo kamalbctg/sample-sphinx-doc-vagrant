@@ -20,6 +20,8 @@ import os
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
 
+current_dir = os.path.dirname(os.path.abspath('__file__'))
+
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
@@ -36,11 +38,13 @@ extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
+    'sphinx.ext.graphviz',
+    'sphinxcontrib.plantuml',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
-
+plantuml = 'java -jar ' + os.path.join(current_dir, 'libs/plantuml.jar') + ' -SdefaultFontName=IPAGothic'
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 # source_suffix = ['.rst', '.md']
@@ -81,8 +85,8 @@ language = None
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = []
-
+#exclude_patterns = []
+exclude_patterns = ['graviz-diagram.rst', ]
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
 #default_role = None
